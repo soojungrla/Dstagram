@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo',
     'accounts',
-    'disqus',
-    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -140,5 +138,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # '/' 설정하면 로그인 후에 메인 페이지로 이동
 LOGIN_REDIRECT_URL ='/'
 
-DISQUS_WEBSITE_SHORTNAME = 'dstagram-django'
-SITE_ID = 1
+#DISQUS_WEBSITE_SHORTNAME = 'dstagram-django'
+#SITE_ID = 1
