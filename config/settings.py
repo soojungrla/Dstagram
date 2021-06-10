@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r*3n7^$f(4s28f3$dl8wnz0y1axg*dtwczf0s-&yggf@d65v6a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo',
     'accounts',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -138,5 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # '/' 설정하면 로그인 후에 메인 페이지로 이동
 LOGIN_REDIRECT_URL ='/'
 
-#DISQUS_WEBSITE_SHORTNAME = 'dstagram-django'
-#SITE_ID = 1
+DISQUS_WEBSITE_SHORTNAME = 'dstagram-django-yhxebplu5n'
+SITE_ID = 1
